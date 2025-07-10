@@ -1,7 +1,8 @@
 ---
 layout: page
 ---
-
+import pygame
+import sys
 
 <!-- vim-markdown-toc GFM -->
 
@@ -198,3 +199,4 @@ The last line of code `pygame.display.update()` simply tells pygame to update
 the screen (we will see later what we need to update). If we had drawn anything
 on the screen, pygame would update those and draw them up. 
 
+pygame.draw.rect(screen, (0, 0, 0), (230, 320, 100, 100)

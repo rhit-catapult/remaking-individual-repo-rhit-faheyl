@@ -46,7 +46,8 @@ while True:
 
     # TODO 03: Try to draw a red circle in the middle of the screen with a radius 100
     # pygame.draw.circle(screen, color, pos, radius, width(optional)  )
-
+    pygame.draw.circle(screen, (255, 0, 0), (50, 100), 50, 0 )
+    pygame.draw.circle(screen, (255, 100, 0), (100, 100), 50, 0)
     # TODO 04: Try to draw a yellow circle with the center exactly in the lower left corner of the screen, radius 10
     # pygame.draw.circle(screen, color, pos, radius, width(optional)  )
 
