@@ -58,7 +58,7 @@ class Hero:
         #       otherwise draw this Hero WITH an umbrella
         current_image = self.image_without_umbrella_filename
 
-        if time.time() - self.last_hit_time < 0.1:
+        if time.time() - self.last_hit_time < 0.2:
             current_image = self.image_with_umbrella_filename
 
         self.screen.blit(current_image, (self.x, self.y))
