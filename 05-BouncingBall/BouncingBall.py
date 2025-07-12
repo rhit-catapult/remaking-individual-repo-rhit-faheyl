@@ -56,11 +56,11 @@ def main():
         mouse_buttons = pygame.mouse.get_pressed()
         if mouse_buttons[0]:
             balls.append(Ball(screen, pygame.mouse.get_pos()[0], pygame.mouse.get_pos()[1]))
-            print("ball")
+            pygame.time.wait(100)
 
 
 
-        clock.tick(60)
+        clock.tick(48)
         screen.fill(pygame.Color('white'))
 
         # TODO: Move the ball
@@ -68,7 +68,7 @@ def main():
         for ball in balls:
             ball.draw()
             ball.move()
-            
+
 
         pygame.display.update()
 
